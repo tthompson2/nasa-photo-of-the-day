@@ -31,3 +31,14 @@
     transform: rotate(360deg);
   }
 }
+
+.img-centerer {
+  height: 10%;
+  text-align: center;
+
+  @media screen and (max-width: 990px){
+
+    width: 80%;
+  }
+}
+

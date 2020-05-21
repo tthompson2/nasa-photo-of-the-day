@@ -1,13 +1,22 @@
 import React from "react";
 import "./App.css";
+import NasaPicList from "./NasaPicList";
+import { Alert, AlertTitle }  from '@material-ui/lab';
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <Alert severity="info">
+        <AlertTitle>Info</AlertTitle>
+        This is the NASA image of the day!
+      </Alert>
+      <br />
+      <NasaPicList />
+      <br />
+      <Alert severity="info">
+      <AlertTitle>Info</AlertTitle>
+        Check back tomorrow for a new image of the day!
+      </Alert>
     </div>
   );
 }
